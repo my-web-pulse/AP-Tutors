@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+:root {
+    --main: black;
+    --secondary: white;
+    --middle: #f5f5f5;
+    --accent1: #0b57cf;
+    --accent2: #0441a2;
+}
+body {
+    margin: 0px;
+    font-family: "Mulish", Arial, sans-serif;
+    background-color: var(--middle);
+}
+header {
+    display: flex;
+    background-color: var(--accent1);
+    color: var(--secondary);
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 50px;
+    padding-top: 20px;
+    font-weight: 500;
+}
+#logo {
+    flex: 25%;
+    margin-top: 5px;
+}
+.headerDiv a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+#selections {
+    flex: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+#selections a {
+    margin-top: 5px;
+    flex: 20%;
+}
+.dropdown {
+    flex: 20%;
+    translate: 0px -19px;
+}
+.material-symbols-outlined {
+    translate: 0px 7px;
+}
+.dropdown a {
+    display: block;
+    padding: 10px 15px;
+    justify-content: center;
+    color: var(--accent2);
+}
+.dropdown .dropdownContent {
+    display: none;
+    position: absolute;
+    translate: 0px -10px;
+    background-color: var(--secondary);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+.dropdown a:hover {
+    background-color: var(--middle);
+}
+#contactHeader {
+    flex: 25%;
+    text-align: end;
+}
+#contactHeader a button {
+    background-color: var(--secondary);
+    color: var(--accent1);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#contactHeader a button:hover {
+    scale: 1.1;
+}
+#content {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+footer {
+    padding-left: 5%;
+    padding-top: 5%;
+    background-color: var(--accent1);
+}
+#footerTop {
+    display: flex;
+}
+.footerColumn {
+    flex: 15%;
+}
+.footerColumn a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+.footerColumn a h2 {
+    color: var(--secondary);
+}
+.footerColumn h2 {
+    color: var(--secondary);
+}
+#footerInfo {
+    margin-left: 15%;
+    flex: 25%;
+    color: var(--secondary)
+}
+#footerBottom {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    color: var(--secondary);
+    text-align: center;
+}
+@media screen and (max-width: 1000px) {
+    header {
+        position: relative;
+    }
+    #hamburger {
+        display: block;
+    }
+    #selections {
+        display: none;
+    }
+    #footerTop {
+        display: block;
+    }
+}

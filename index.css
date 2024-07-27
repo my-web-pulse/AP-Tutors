@@ -1,0 +1,170 @@
+#hero {
+    display: flex;
+}
+#heroLeft {
+    flex: 60%;
+}
+#heroLeft h1, #heroLeft p {
+    width: 60%;
+}
+#heroButtons {
+    display: inline-block;
+}
+#heroButtons a {
+    padding-right: 30px;
+}
+#heroButtons a button {
+    background-color: var(--accent1);
+    color: var(--secondary);
+    width: 15vw;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 250ms ease-in-out;
+}
+#heroButtons a button:hover {
+    background-color: var(--accent2);
+    scale: 1.05;
+}
+#heroRight {
+    flex: 40%;
+}
+#heroRight img {
+    border-radius: 10px;
+    width: 40vw;
+}
+#convince {
+    display: flex;
+    margin-top: 50px;
+}
+#convinceLeft {
+    flex: 30%;
+    padding-right: 5%;
+}
+#convinceRight {
+    flex: 70%;
+}
+.convinceRow {
+    display: flex;
+}
+.convinceContent {
+    display: flex;
+    flex: 50%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+.vertical {
+    height: 200px;
+    border-left: 2px solid var(--accent1);
+}
+.convinceText {
+    margin-left: 5%;
+}
+.convinceText hr {
+    border: 1px solid var(--accent1);
+    display: none;
+}
+.convinceText h2{
+    color: var(--accent1);
+    border: solid var(--accent1);
+    border-radius: 5px;
+    width: 50px;
+    height: 38px;
+    text-align: center;
+    padding-top: 12px;
+}
+#info {
+    background-color: var(--middle);
+    display: flex;
+    margin-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+}
+.infoContent {
+    text-align: center;
+    flex: 33%;
+}
+.infoContent img {
+    border: solid var(--accent1);
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+}
+#enroll {
+    padding-top: 30px;
+    margin-bottom: 5%;
+}
+.enrollContent {
+    display: flex;
+    box-shadow: -1px 1px 3px 3px var(--middle);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+.enrollContent:hover {
+    transition: 0.5s;
+}
+.enrollText {
+    flex: 75%;
+    display: flex;
+}
+.enrollText h2 {
+    flex: 10%;
+}
+.enrollText p {
+    margin-top: 1.5em;
+    flex: 90%;
+}
+.enrollLink {
+    margin-top: 1.5em;
+    flex: 25%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #hero {
+        flex-direction: column-reverse;
+    }
+    #heroRight img {
+        scale: 0.75;
+        width: 80vw;
+    }
+    #heroButtons a button {
+        width: 25vw;
+    }
+    #convince {
+        display: block;
+    }
+    .vertical {
+        display: none;
+    }
+    .convinceText hr {
+        display: block;
+    }
+    #hr02 {
+        display: none;
+    }
+    #info {
+        display: block;
+    }
+    .enrollContent {
+        padding: 2.5px;
+        display: block;
+    }
+    .enrollText {
+        display: block;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 720px) {
+    .convinceRow {
+        display: block;
+    }
+    #hr02 {
+        display: block;
+    }
+}
